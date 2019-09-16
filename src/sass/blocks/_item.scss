@@ -1,0 +1,115 @@
+.item_box {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+  align-items: flex-start;
+    .ib_left {
+      width: 50%;
+      margin-right: 48px;
+    }
+    .ib_right {
+      padding-top: 24px;
+      width: 50%;
+        .gost {
+          color: #1f1f1f;
+          opacity: 0.4;
+          font-size: 16px;
+          margin-left: 12px;
+          font-family: $font-family-medium;
+        }
+      .descr {
+        max-width: 420px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 24px;
+      }
+      .price {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 32px;
+        .quantity {
+          margin-right: 48px;
+            .p_ttl {
+              margin-bottom: 12px;
+              opacity: 0.6;
+            }
+            &_item {
+              display: flex;
+              align-items: center;
+                p {
+                  margin: 0 12px;
+                  font-size: 24px;
+                  line-height: 24px;
+                  opacity: 0.5;
+                }
+                .quantity_btn {
+                  font-size: 30px;
+                  height: 30px;
+                  width: 30px;
+                  background-color: #fff;
+                  color: #000;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 0;
+                  border: 0;
+                  line-height: 30px;
+                  box-shadow: none;
+                }
+            }
+        }
+        .count {
+          .p_ttl {
+            margin-bottom: 12px;
+            opacity: 0.6;
+          }
+          .orange_price {
+            color: $color-orange;
+            font-family: $font-family_medium;
+            font-size: 24px;
+            line-height: 30px;
+            opacity: 1;
+          }
+        }
+      }
+      .btns_block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+          .btn {
+            &:first-child {
+              margin-right: 24px;
+            }
+          }
+      }
+    }
+  .old_part {
+    p {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.following {
+    .ib_right {
+      padding-top: 0 !important;
+    }
+  margin-bottom: 0 !important;
+}
+
+.up_text {
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+.link_img {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 24px;
+  width: 100%;
+    img {
+      margin-left: 12px;
+    }
+}

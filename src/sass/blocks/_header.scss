@@ -1,0 +1,111 @@
+.header {
+  @extend .layout-padding;
+  background-color: #3b3b3b;
+}
+
+.header__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    &_menu {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+}
+
+.header__main {
+  @extend .layout-inner;
+  margin-bottom: 32px;
+    &_top {
+      background-color: #fff;
+      padding: 36px 24px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+        .header_contacts {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+    }
+    &_bottom {
+      display: flex;
+      align-items: center;
+      width: 100%;
+        .search {
+          background-color: #fff;
+          margin-right: 3px;
+          height: 54px;
+          width: 100%;
+          input {
+            height: 54px;
+            width: calc(100% - 50px);
+            border: 0;
+            padding: 0;
+            outline: none;
+            padding-left: 24px;
+            margin-right: 24px;
+            background-image: url('../img/loop.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            -webkit-background-size: 16px;
+            background-size: 16px;
+
+            &::-webkit-input-placeholder {
+              opacity: 0.7;
+              font-size: 16px;
+            }
+            &::-moz-placeholder {
+              opacity: 0.7;
+              font-size: 16px;
+            }
+            &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+            &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+          }
+        }
+        .catalog {
+          background-color: #fff;
+          margin-right: 3px;
+          height: 54px;
+          min-width: 180px;
+          width: 240px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+            a {
+              border-bottom: 0;
+                &:hover {
+                  border-bottom: 0;
+                }
+            }
+        }
+        .cart {
+          background-color: #fff;
+          height: 54px;
+          min-width: 180px;
+          width: 180px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+            a {
+              font-size: 16px;
+              border-bottom: 0;
+            }
+        }
+    }
+}
+
+.price_head {
+  a {
+    border-bottom: none;
+      &:hover {
+        border-bottom: 0;
+      }
+  }
+}

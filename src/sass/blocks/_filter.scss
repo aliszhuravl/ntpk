@@ -1,0 +1,56 @@
+.filter_item {
+  height: 32px;
+  background-color: #efefef;
+  padding: 4px 0 4px 24px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 12px;
+  margin-bottom: 12px;
+    p {
+      margin-right: 12px;
+    }
+  .quantity_btn {
+    border: 0;
+    background-color: transparent;
+    margin-right: 8px;
+    position: relative;
+  }
+}
+
+.filter_list {
+  margin-right: 24px;
+  display: flex;
+    .invisible_btn {
+      img {
+        display: block;
+      }
+    }
+}
+
+.filter_chosen {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 24px;
+}
+
+.filters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+    .left {
+      width: auto;
+      display: flex;
+      align-items: flex-start;
+    }
+}
+
+.page_style {
+  display: flex;
+  align-items: center;
+    .like_tile {
+      margin-right: 24px;
+    }
+}

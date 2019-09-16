@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 14px/1.5 $font-family;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: $font-family_bold;
+  max-width: 60%;
+  margin-top: 0;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: $font-family_bold;
+  margin-bottom: 24px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 18px;
+  font-family: $font-family_bold;
+}
+
+.bold {
+  font-family: $font-family_semibold;
+}
+
+.bigger {
+  font-size: 16px;
+}
+
+.orange {
+  color: $color-orange;
+}
+
+.mb {
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+}

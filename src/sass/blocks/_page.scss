@@ -1,0 +1,129 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #f3f4f5;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.page__item {
+  width: 100%;
+  background-color: transparent;
+    &_box {
+      margin-bottom: 32px;
+      background-color: #fff;
+        &__inner {
+          padding: 24px;
+        }
+    }
+    &_tile {
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+        &__item {
+          margin-right: 32px;
+          width: calc(33.3333% - 22px);
+          padding: 24px;
+          background-color: #fff;
+          margin-bottom: 32px;
+          height: 300px;
+          border: 2px solid #fff;
+          transition: all 0.3s;
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+          &_inner {
+            .name {
+              font-family: $font-family_semibold;
+              font-size: 18px;
+              margin-bottom: 24px;
+            }
+            .cats {
+              p {
+                margin-bottom: 12px;
+              }
+            }
+          }
+        }
+    }
+}
+
+.dual {
+  .page__item_tile__item {
+    height: auto;
+    width: calc(50% - 16px);
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.centered {
+  align-items: center;
+}
+
+.pib_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+    h2 {
+      margin-bottom: 24px;
+      line-height: 24px;
+    }
+}
+.pib_body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  .left {
+    margin-right: 30px;
+    img {
+      display: block;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    p {
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .pib_body__inner_title {
+    margin-bottom: 20px;
+  }
+}
+
+.pib_images {
+  .right {
+    width: 50%;
+    align-items: flex-start;
+    margin-left: 56px;
+  }
+}

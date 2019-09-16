@@ -1,0 +1,85 @@
+.slider {
+    width: 100%;
+    &__inner {
+        width: 100%;
+        .slide {
+            width: 100%;
+            background-image: url('../img/slide.png');
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 320px;
+                &__inner {
+                    width: 100%;
+                    padding: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    h2 {
+                        max-width: 320px;
+                        font-family: $font-family_semibold;
+                        letter-spacing: 1px;
+                        line-height: 30px;
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 16px;
+                        opacity: 0.7;
+                    }
+                }
+        }
+        .slide-two {
+            background-image: url('../img/slide2.png');
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.vsp {
+    background-image: url('../img/1.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &:hover {
+        border: 2px solid $color-orange;
+    }
+}
+
+.pi {
+    background-image: url('../img/2.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &:hover {
+        border: 2px solid $color-orange;
+    }
+}
+
+.zps {
+    background-image: url('../img/3.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &:hover {
+        border: 2px solid $color-orange;
+    }
+}
+
+.rm {
+    background-image: url('../img/4.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &:hover {
+        border: 2px solid $color-orange;
+    }
+}

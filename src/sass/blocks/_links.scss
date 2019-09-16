@@ -1,0 +1,63 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: #000;
+  border-bottom: 1px dashed #000;
+
+  &:hover {
+    color: $color-orange;
+    border-bottom: 1px dashed transparent;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_light {
+  color: $color-blue-10;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+}
+
+.link_dark {
+  color: $font-color_dark;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+}
+
+.link_orange {
+  color: $color-orange;
+  
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+.link-orange-underlined {
+  border-bottom: 1px dashed $color-orange;
+}
+
+.link_underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.doc_link {
+  display: flex;
+    img {
+      display: block;
+      margin-right: 12px;
+    }
+}

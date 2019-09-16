@@ -1,0 +1,14 @@
+.emptiness {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #ccc;
+  flex-direction: column;
+  padding: 48px;
+    p {
+      margin-bottom: 24px;
+      max-width: 70%;
+      text-align: center;
+    }
+}
