@@ -27,7 +27,6 @@
   width: 16px;
   height: 16px;
   border: 1px solid $color-gray-50;
-  border-radius: 3px;
   background: $color-white;
   transition: all .1s;
 
@@ -51,8 +50,8 @@
 
 //стили отмеченного чекбокса
 .form__checkbox > input:checked ~ .form__checkbox_indicator {
-  background: $color-blue-50;
-  border-color: $color-blue-50;
+  background: $color-orange;
+  border-color: $color-orange;
 
   &:after {
     transform: scale(1) rotate(-45deg);
@@ -69,7 +68,7 @@
 
 //стиль при получении фокуса
 .form__checkbox > input:focus ~ .form__checkbox_indicator {
-  border-color: $color-blue-30;
+  border-color: $color-orange;
 
   &:after {
     border-color: $color-gray-30;

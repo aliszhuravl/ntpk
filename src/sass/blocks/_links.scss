@@ -61,3 +61,18 @@
       margin-right: 12px;
     }
 }
+
+.link_simple {
+  border: 0;
+    &:hover {
+      border: 0;
+    }
+}
+
+.link_solid {
+  text-decoration: underline;
+  border: 0;
+  &:hover {
+    border: 0;
+  }
+}

@@ -49,5 +49,256 @@
             }
           }
         }
+      &_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 80px;
+        img {
+          width: 100%;
+        }
+        .about_text {
+          border-top: 3px solid $color-orange;
+          padding: 40px 80px;
+          margin-top: -80px;
+          width: 80%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #fff;
+            p {
+              text-align: center;
+            }
+        }
+      }
     }
 }
+
+.uzko {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  .text_box__right {
+    width: 80%;
+    margin-bottom: 80px;
+      .left {
+        margin-right: -80px;
+        padding: 24px 48px 24px 0px;
+        background-color: #fff;
+        p {
+          opacity: 1;
+        }
+      }
+  }
+  .text_box__left {
+    width: 80%;
+    margin-bottom: 40px;
+      .cont {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px dashed $color-black;
+        padding: 15px;
+          .city {
+            p {
+              font-size: 16px;
+              opacity: 1;
+              font-family: $font-family_medium;
+            }
+          }
+      }
+  }
+}
+
+.slider_p {
+  width: 100%;
+  display: flex;
+    &__inner {
+      width: 100%;
+        .slp {
+          width: 100%;
+            &_slide {
+              padding: 20px;
+              img {
+                width: 100%;
+              }
+            }
+        }
+    }
+}
+
+.ps_nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+.btn_slides {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+  .btn_slides {
+    padding: 0 15px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.btn_left {
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  transform: rotate(-135deg);
+  opacity: 0.6;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn_right {
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.clr {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:before {
+          display: none;
+        }
+    }
+}
+
+.ctry {
+  height: fit-content !important;
+}
+
+.catl {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  width: 100%;
+    .pib_body__inner {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+}
+
+.cat_d {
+  align-items: stretch;
+}
+
+.cont_c {
+  margin-bottom: 24px;
+    .ico_text {
+      display: flex;
+      align-items: flex-start;
+        .ico {
+          margin-top: 0;
+          img {
+            display: block;
+          }
+        }
+  }
+    p {
+      margin-bottom: 8px;
+    }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pin {
+  height: 20px;
+  margin-top: 4px;
+}
+
+.pib_body__form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.cont_dual {
+  align-items: stretch;
+}
+
+.contacts_map_box {
+  width: 100%;
+  justify-content: space-between;
+    .right {
+      width: 100%;
+      max-width: 630px;
+      .map {
+        //заглушка карты
+        width: 100%;
+        height: 300px;
+        background-color: #ccc;
+        background-image: url('../img/map.png');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: right center;
+      }
+    }
+}
+
+.post {
+  align-items: flex-end !important;
+}
+
+.time_box {
+  .ico {
+    margin-top: 4px !important;
+  }
+  .ico_p {
+    p {
+      opacity: 1;
+    }
+  }
+}
+
+.wb_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
