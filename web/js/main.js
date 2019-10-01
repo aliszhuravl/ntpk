@@ -207,10 +207,6 @@ $('.dropdown').each(function () {
             $dropdown.find('.dropdown__list').slideDown(250);
         }
     });
-
-    // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
-    // Updates the select element to have the value of the equivalent option
-
     // Hides the unordered list when clicking outside of it
     $(document.body).click( function() {
         $dropdown.removeClass('dropdown_opened');
@@ -225,6 +221,19 @@ $(document).ready(function() {
 
     $("#tile").click(function () {
         $(".items_tile").removeClass('list_styled');
+    });
+
+});
+
+$(document).ready(function() {
+    $("#popup").click(function () {
+        $(".popm").addClass('visible_popup');
+        $("body").addClass('stop');
+    });
+
+    $(".cross-pop").click(function () {
+        $(".popup_wrapper").removeClass('visible_popup');
+        $("body").removeClass('stop');
     });
 
 });

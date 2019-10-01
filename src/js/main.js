@@ -7,3 +7,4 @@
 //= parts/_accordion.js
 //= parts/_dropdown.js
 //= parts/_style.js
+//= parts/_popup.js

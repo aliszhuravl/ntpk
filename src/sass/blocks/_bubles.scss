@@ -87,3 +87,17 @@
     left: 100% !important;
   }
 }
+.cart {
+  position: relative;
+  .ib_cart {
+    right: 0;
+    left: auto;
+    top: 100%;
+  }
+  &:hover {
+    .ib_cart {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
