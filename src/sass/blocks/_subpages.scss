@@ -69,8 +69,10 @@
           flex-direction: column;
           justify-content: center;
           background-color: #fff;
+          position: relative;
             p {
               text-align: center;
+              width: 100%;
             }
         }
       }

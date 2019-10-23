@@ -3,6 +3,8 @@
 .internet-explorer {
 
   & .page__inner {
-    height: calc(100vh - 70px - 50px); //100vh - header height - footer height
+    //height: calc(100vh - 70px - 50px); //100vh - header height - footer height
+    min-height: 100%;
+    height: 100%;
   }
 }
