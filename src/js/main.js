@@ -8,3 +8,5 @@
 //= parts/_dropdown.js
 //= parts/_style.js
 //= parts/_popup.js
+//= parts/_fancybox.js
+//= parts/_tabs.js
